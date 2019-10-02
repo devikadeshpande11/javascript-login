@@ -10,6 +10,7 @@
   <title>PAM Module</title>
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   <link rel="stylesheet" href="login.css">
+  <script src="login.js"></script>
 
 </head>
 
@@ -19,13 +20,13 @@
 
 <h1>Login here</h1>
 
-<form class="login" action="" method="post"> 
+<form class="login" action="" method="post"  > 
     <div><label for="username">Username</label>
       <input type="text" name="username" id="username"></div>
     <div><label for="password">Password</label>
       <input type="password" name="password" id="password"></div>
     <div class="actions">
-      <input type="submit" name="login" value="Login">
+      <input type="submit" name="login" value="Login" onclick="testLogin()"/>
     </div>
 </form>
 
